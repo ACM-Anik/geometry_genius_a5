@@ -8,9 +8,42 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header></header>
-    <main></main>
+<body class="container mx-auto">
+    <header>
+        <div class="navbar bg-base-100 bg-sky-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/></svg>
+                    </label>
+                </div>
+                <div>
+                    <h1 class="font-bold text-2xl">Interactive </h1>
+                    <h3 class="font-semibold text-slate-500">Geometry Genius</h3>
+                </div>
+            </div>
+            <div class="navbar-end">
+              <a id="" class="btn btn-sm bg-blue-500 border border-0 raunded rounder">Questions</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="grid grid-cols-3">
+            <div class="card w-56 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Triangle</h2>
+                  <p>Area (A) = 0.5 * b * h</p>
+                  <input class="border border-0 outline-0 bg-gray-100 " type="number" name="" id="triangle-b"> cm <input class="border border-0 outline-0 bg-gray-100" type="number" name="" id="triangle-h">
+                  <div class="card-actions">
+                    <button class="btn btn-primary px-10">Calculate</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
     <script src="JS/script.js"></script>
 </body>
 </html>
