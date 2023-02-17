@@ -11,7 +11,7 @@
 </head>
 <body class="container mx-auto">
     <header>
-        <div class="navbar bg-base-100 bg-sky-100">
+        <div class="navbar bg-base-100 bg-sky-100 rounded shadow-lg">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -29,16 +29,16 @@
         </div>
     </header>
     <main>
-        <section class="flex justify-between my-6">
-            <div class="grid grid-cols-3 gap-4 my-4">
+        <section class="md:flex justify-between my-6">
+            <div class="grid md:grid-cols-3 gap-4 my-4">
 
-                <div class="card w-72 bg-base-100 shadow-xl">
+                <div class="card md:w-72 bg-base-100 shadow-xl border mx-3 md:mx-0">
                     <figure class="px-10 pt-10">
                       <img src="./images/triangle.png" alt="triangle" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Triangle</h2>
-                      <p class="text-slate-600">Area (A) = 0.5 × <span id="triangle-b-formula">b</span> × <span id="triangle-h-formula">h</span></p>
+                      <p class="text-slate-600">Area (A) = 0.5 ⨉ <span id="triangle-b-formula">b</span> ⨉ <span id="triangle-h-formula">h</span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="triangle-b" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="triangle-h" min="0"> cm
                       </p>
@@ -48,13 +48,13 @@
                     </div>
                 </div>
 
-                <div class="card w-72 bg-base-100 shadow-xl">
+                <div class="card md:w-72 bg-base-100 shadow-xl border mx-3 md:mx-0">
                     <figure class="px-10 pt-10">
                       <img src="./images/rectangle.png" alt="rectangle" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Rectangle</h2>
-                      <p class="text-slate-600">Area (A) = <span id="rectangle-w-formula"> w </span>× <span id="rectangle-i-formula">I</span></p>
+                      <p class="text-slate-600">Area (A) = <span id="rectangle-w-formula"> w </span>⨉ <span id="rectangle-i-formula">I</span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="rectangle-w" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="rectangle-i" min="0"> cm
                       </p>
@@ -64,13 +64,13 @@
                     </div>
                 </div>
 
-                <div class="card w-72 bg-base-100 shadow-xl">
+                <div class="card md:w-72 bg-base-100 shadow-xl border mx-3 md:mx-0">
                     <figure class="px-10 pt-10">
                       <img src="./images/parallelogram.png" alt="parallelogram" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Parallelogram</h2>
-                      <p class="text-slate-600">Area (A) = <span id="parallelogram-b-formula"> b </span>× <span id="parallelogram-h-formula">h</span></p>
+                      <p class="text-slate-600">Area (A) = <span id="parallelogram-b-formula"> b </span>⨉ <span id="parallelogram-h-formula">h</span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="parallelogram-b" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="parallelogram-h" min="0"> cm
                       </p>
@@ -80,13 +80,13 @@
                     </div>
                 </div>
 
-                <div class="card w-72 bg-base-100 shadow-xl">
+                <div class="card md:w-72 bg-base-100 shadow-xl border mx-3 md:mx-0">
                     <figure class="px-10 pt-10">
                       <img src="./images/rhombus.png" alt="rhombus" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Rhombus</h2>
-                      <p class="text-slate-600">Area (A) = 0.5 × <span id="rhombus-d1-formula"> d<sub>1</sub> </span>× <span id="rhombus-d2-formula">d<sub>2</sub></span></p>
+                      <p class="text-slate-600">Area (A) = 0.5 ⨉ <span id="rhombus-d1-formula"> d<sub>1</sub> </span>⨉ <span id="rhombus-d2-formula">d<sub>2</sub></span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="rhombus-d1" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="rhombus-d2" min="0"> cm
                       </p>
@@ -96,13 +96,13 @@
                     </div>
                 </div>
 
-                <div class="card w-72 bg-base-100 shadow-xl">
+                <div class="card md:w-72 bg-base-100 shadow-xl border mx-3 md:mx-0">
                     <figure class="px-10 pt-10">
                       <img src="./images/pentagon.png" alt="pentagon" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Pentagon</h2>
-                      <p class="text-slate-600">Area (A) = 0.5 <span id="pentagon-p-formula"> p </span>× <span id="pentagon-b-formula">b</span></p>
+                      <p class="text-slate-600">Area (A) = 0.5 ⨉ <span id="pentagon-p-formula"> p </span>⨉ <span id="pentagon-b-formula">b</span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="pentagon-p" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="pentagon-b" min="0"> cm
                       </p>
@@ -112,13 +112,13 @@
                     </div>
                 </div>
                 
-                <div class="card w-72 bg-base-100 shadow-xl">
+                <div class="card md:w-72 bg-base-100 shadow-xl border mx-3 md:mx-0">
                     <figure class="px-10 pt-10">
                       <img src="./images/ellipse.png" alt="ellipse" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Ellipse</h2>
-                      <p class="text-slate-600">Area (A) = π<span id="ellipse-a-formula">a</span><span id="ellipse-b-formula">b</span></p>
+                      <p class="text-slate-600">Area (A) = π <span id="ellipse-a-formula">a</span><span id="ellipse-b-formula">b</span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="ellipse-w" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="ellipse-i" min="0"> cm
                       </p>
@@ -128,8 +128,25 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center my-5">
-                <textarea class=" px-8 border rounder-xl outline-0 d-block" name="" id="text-area" cols="40" rows="17" ></textarea>
+
+            <div class=" my-5 border rounded shadow-lg md:w-[28%] h-80 p-2">
+                <h1 class="text-center text-2xl font-semibold underline underline-offset-8">Area Calculation</h1>
+                <div class="overflow-x-auto my-6">
+                    <table class="table w-full">
+                      <!-- head -->
+                      <thead>
+                      </thead>
+                      <tbody id="data-area" >
+                        <!-- row 1 -->
+                        <!-- <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          <td>Quality Control Specialist</td>
+                          <td>Blue</td>
+                        </tr> -->
+                      </tbody>
+                    </table>
+                </div>
             </div>
         </section>
     </main>

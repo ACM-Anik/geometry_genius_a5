@@ -8,9 +8,33 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="container mx-auto">
     <header>
-        <h1 class="text-3xl font-bold text-center">Some Common Questions</h1>
+        <h1 class="text-4xl font-bold text-center my-8">Some Common Questions</h1>
     </header>
+    <main class="bg-sky-100 p-10 w-4/5 mx-auto rounded">
+        <div class="my-5">
+            <h3 class="text-2xl font-semibold">Q-1: What is DOM? What is the purpose of DOM?</h3>
+            <h3 class="text-xl text-gray-700"><strong>Answer:</strong> DOM is a Document Object Model. It's basically, used to allows programs to dynamically access and update the content, structure, and style of a document in html.</h3>
+        </div>
+        <div class="my-5">
+            <h3 class="text-2xl font-semibold">Q-2: How will you select HTML elements using DOM? Name the DOM methods.</h3>
+            <h3 class="text-xl text-gray-700"><strong>Answer:</strong> There are some ways in which I can select HTML elements in a DOM using selectors:- <br>
+                1. getElementsByTagName();
+                2. getElementsByClassName();
+                3. getElementById();
+                4. querySelector();
+                5. querySelectorAll();
+            </h3>    
+        </div>
+        <div class="my-5">
+            <h3 class="text-2xl font-semibold">Q-3: What is event bubble?</h3>
+            <h3 class="text-xl text-gray-700"><strong>Answer:</strong> Event bubble is a kind of event propagation in DOM, where the event bubbles up to its parent and ancestor elements in the DOM tree until it gets to the root element.</h3>
+        </div>
+        <div class="my-5">
+            <h3 class="text-2xl font-semibold">Q-4: What is a callback function and why will you use it?</h3>
+            <h3 class="text-xl text-gray-700"><strong>Answer:</strong> A callback function is a function that passed as an argument to another function and can return back without any parameters. </h3>
+        </div>
+    </main>
 </body>
 </html>
