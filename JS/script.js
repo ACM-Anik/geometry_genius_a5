@@ -17,7 +17,8 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
         return;
     }
     else if(triangleB === "" || triangleH ==="" || triangleB < 0 || triangleH < 0){
-        alert('Please enter any valid (positive) number.')
+        alert('Please enter any valid (positive) number.');
+        return;
     }
     serial += 1;
     displayData(triangleTitle, triangleMultiply);
@@ -37,7 +38,8 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
         return;
     }
     else if(rectangleW === "" || rectangleI ==="" || rectangleW < 0 || rectangleI < 0){
-        alert('Please enter any valid (positive) number.')
+        alert('Please enter any valid (positive) number.');
+        return;
     }
     serial += 1;
     displayData(rectangleTitle, rectangleMultiply);
@@ -56,7 +58,8 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
         return;
     }
     else if(parallelogramB === "" || parallelogramH ==="" || parallelogramB < 0 || parallelogramH < 0){
-        alert('Please enter any valid (positive) number!')
+        alert('Please enter any valid (positive) number!');
+        return;
     }
     serial += 1;
     displayData(parallelogramTitle, parallelogramMultiply);
@@ -75,7 +78,8 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
         return;
     }
     else if(rhombusD1 === "" || rhombusD2 ==="" || rhombusD1 < 0 || rhombusD2 < 0){
-        alert('Please enter any valid (positive) number.')
+        alert('Please enter any valid (positive) number.');
+        return;
     }
     serial += 1;
     
@@ -95,7 +99,8 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
         return;
     }
     else if(pentagonP === "" || pentagonB ==="" || pentagonP < 0 || pentagonB < 0){
-        alert('Please enter any valid (positive) number.')
+        alert('Please enter any valid (positive) number.');
+        return;
     }
     serial += 1; 
     displayData(pentagonTitle, pentagonMultiply);
@@ -114,7 +119,8 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
         return;
     }
     else if(ellipseW === "" || ellipseI ==="" || ellipseW < 0 || ellipseI < 0){
-        alert('Please enter any valid (positive) number.')
+        alert('Please enter any valid (positive) number.');
+        return;
     }
     serial += 1;
     displayData(ellipseTitle, ellipseMultiply);
