@@ -35,7 +35,7 @@
                       <img src="./images/triangle.png" alt="triangle" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Triangle</h2>
+                      <h2 id="triangle-title" class="card-title">Triangle</h2>
                       <p class="text-slate-600">Area (A) = 0.5 ⨉ <span id="triangle-b-formula">b</span> ⨉ <span id="triangle-h-formula">h</span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="triangle-b" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="triangle-h" min="0"> cm
@@ -51,7 +51,7 @@
                       <img src="./images/rectangle.png" alt="rectangle" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Rectangle</h2>
+                      <h2 id="rectangle-title" class="card-title">Rectangle</h2>
                       <p class="text-slate-600">Area (A) = <span id="rectangle-w-formula"> w </span>⨉ <span id="rectangle-i-formula">I</span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="rectangle-w" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="rectangle-i" min="0"> cm
@@ -67,7 +67,7 @@
                       <img src="./images/parallelogram.png" alt="parallelogram" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Parallelogram</h2>
+                      <h2 id="parallelogram-title" class="card-title">Parallelogram</h2>
                       <p class="text-slate-600">Area (A) = <span id="parallelogram-b-formula"> b </span>⨉ <span id="parallelogram-h-formula">h</span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="parallelogram-b" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="parallelogram-h" min="0"> cm
@@ -83,7 +83,7 @@
                       <img src="./images/rhombus.png" alt="rhombus" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Rhombus</h2>
+                      <h2 id="rhombus-title" class="card-title">Rhombus</h2>
                       <p class="text-slate-600">Area (A) = 0.5 ⨉ <span id="rhombus-d1-formula"> d<sub>1</sub> </span>⨉ <span id="rhombus-d2-formula">d<sub>2</sub></span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="rhombus-d1" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="rhombus-d2" min="0"> cm
@@ -99,7 +99,7 @@
                       <img src="./images/pentagon.png" alt="pentagon" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Pentagon</h2>
+                      <h2 id="pentagon-title" class="card-title">Pentagon</h2>
                       <p class="text-slate-600">Area (A) = 0.5 ⨉ <span id="pentagon-p-formula"> p </span>⨉ <span id="pentagon-b-formula">b</span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="pentagon-p" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="pentagon-b" min="0"> cm
@@ -115,7 +115,7 @@
                       <img src="./images/ellipse.png" alt="ellipse" class="h-[150px]" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Ellipse</h2>
+                      <h2 id="ellipse-title" class="card-title">Ellipse</h2>
                       <p class="text-slate-600">Area (A) = π <span id="ellipse-a-formula">a</span><span id="ellipse-b-formula">b</span></p>
                       <p class="my-3">
                         <input class="border border-0 outline-0 bg-gray-100 w-16 rounded" type="number" name="" id="ellipse-w" min="0"> cm <input class="border border-0 outline-0 bg-gray-100  w-16 rounded " type="number" name="" id="ellipse-i" min="0"> cm
@@ -127,8 +127,8 @@
                 </div>
             </div>
 
-<!-- Second Part(Result) -->
-            <div class=" my-5 border rounded shadow-lg lg:w-[28%] h-96 p-2">
+<!-- Second Part(Result Display) -->
+            <div class=" my-5 border rounded shadow-lg lg:w-[29%] h-96 p-2">
                 <h1 class="text-center text-2xl font-semibold underline underline-offset-8">Area Calculation</h1>
                 <div class="overflow-x-auto my-6">
                     <table class="table w-full">
