@@ -56,7 +56,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
         return;
     }
     else if(parallelogramB === "" || parallelogramH ==="" || parallelogramB < 0 || parallelogramH < 0){
-        alert('Please enter any valid (positive) number.')
+        alert('Please enter any valid (positive) number!')
     }
     serial += 1;
     displayData(parallelogramTitle, parallelogramMultiply);
@@ -139,7 +139,7 @@ function getNameOfElementById(nameId){
 
 
 // To create a dynamic table to display data:
-function displayData(title ,multiply){
+function displayData(title, multiply){
     const dataContainer = document.getElementById('data-area');
     const tr = document.createElement('tr');
     tr.innerHTML=`
@@ -147,7 +147,7 @@ function displayData(title ,multiply){
         <td class="p-0 my-2"> ${title}</td>
         <td class="p-0 my-2">${multiply}cm<sup>2</sup></td>
         <button class="text-white bg-sky-500 hover:bg-sky-600 px-1 py-1 font-semibold rounded border border-0 my-2">Covert to m<sup>2</sup></button>
-        <button class="text-red-500 hover:bg-gray-100 font-bold px-3 py-1 my-2 ml-4 ">X</button>
+        <button class="text-red-500 hover:bg-gray-100 font-bold px-1 py-1 my-2 ">X</button>
     `;
     dataContainer.appendChild(tr);
 }
@@ -166,3 +166,5 @@ function color(colorRandom){
 function noColor(noColorRandom){
     noColorRandom.style.backgroundColor = "";
 }
+
+
