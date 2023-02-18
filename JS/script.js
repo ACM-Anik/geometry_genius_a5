@@ -161,7 +161,7 @@ const getColor = () => {
 
 function color(colorRandom){
     colorRandom.style.backgroundColor = getColor();
-    colorRandom.style.transition = "0.5s";
+    colorRandom.style.transition = "0.3s";
 }
 function noColor(noColorRandom){
     // noColorRandom.style.backgroundColor = "";
