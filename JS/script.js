@@ -6,13 +6,15 @@ document.getElementById('blogs').addEventListener('click', function(){
 let serial = 0;
 // Triangle Card:
 document.getElementById('btn-triangle').addEventListener('click', function(){
-    const triangleBString = document.getElementById('triangle-b').value;
-    const triangleB = parseFloat(triangleBString);
-    const triangleHString = document.getElementById('triangle-h').value;
-    const triangleH = parseFloat(triangleHString);
+    // const triangleBString = document.getElementById('').value;
+    // const triangleB = parseFloat(triangleBString);
+    // const triangleHString = document.getElementById('triangle-h').value;
+    // const triangleH = parseFloat(triangleHString);
+
+    const triangleB = getElementValueById('triangle-b');
+    const triangleH = getElementValueById('triangle-h');
 
     const triangleMultiply = 0.5 * triangleB * triangleH;
-    // displayResult(multiply);
     serial += 1;
     console.log(triangleMultiply);
     displayData(triangleMultiply);
@@ -53,23 +55,23 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
 
 // Pentagon card:
 document.getElementById('btn-pentagon').addEventListener('click', function(){
-    const parallelogramB = getElementValueById('parallelogram-b');
-    const parallelogramH = getElementValueById('parallelogram-h');
+    const pentagonP = getElementValueById('pentagon-p');
+    const pentagonB = getElementValueById('pentagon-b');
     
     serial += 1;
-    parallelogramMultiply = parallelogramB * parallelogramH;
-    displayData(parallelogramMultiply);
+    pentagonMultiply = 0.5 * pentagonP * pentagonB;
+    displayData(pentagonMultiply);
 });
 
 
 // Ellipse card:
 document.getElementById('btn-ellipse').addEventListener('click', function(){
-    const parallelogramB = getElementValueById('parallelogram-b');
-    const parallelogramH = getElementValueById('parallelogram-h');
+    const ellipseW = getElementValueById('ellipse-w');
+    const ellipseI = getElementValueById('ellipse-i');
     
     serial += 1;
-    parallelogramMultiply = parallelogramB * parallelogramH;
-    displayData(parallelogramMultiply);
+    ellipseMultiply = (3.14 * ellipseW * ellipseI).toFixed(2);
+    displayData(ellipseMultiply);
 });
 
 
