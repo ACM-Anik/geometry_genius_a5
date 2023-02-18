@@ -14,7 +14,7 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     const triangleB = getElementValueById('triangle-b');
     const triangleH = getElementValueById('triangle-h');
 
-    const triangleMultiply = 0.5 * triangleB * triangleH;
+    const triangleMultiply = (0.5 * triangleB * triangleH).toFixed(2);
     serial += 1;
     console.log(triangleMultiply);
     displayData(triangleMultiply);
@@ -48,7 +48,7 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
     const rhombusD2 = getElementValueById('rhombus-d2');
     
     serial += 1;
-    rhombusMultiply = 0.5 * rhombusD1 * rhombusD2;
+    rhombusMultiply = (0.5 * rhombusD1 * rhombusD2).toFixed(2);
     displayData(rhombusMultiply);
 });
 
@@ -59,7 +59,7 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
     const pentagonB = getElementValueById('pentagon-b');
     
     serial += 1;
-    pentagonMultiply = 0.5 * pentagonP * pentagonB;
+    pentagonMultiply = (0.5 * pentagonP * pentagonB).toFixed(2);
     displayData(pentagonMultiply);
 });
 
