@@ -152,4 +152,17 @@ function displayData(title ,multiply){
     dataContainer.appendChild(tr);
 }
 
+// To get random background color:
+const getColor = () => {
+    const randomNumber = Math.floor(Math.random() * 16777215);
+    const randomCode = "#" + randomNumber.toString(16);
+    return randomCode;
+}
 
+function color(colorRandom){
+    colorRandom.style.backgroundColor = getColor();
+    colorRandom.style.transition = "0.5s";
+}
+function noColor(noColorRandom){
+    noColorRandom.style.backgroundColor = "none";
+}
