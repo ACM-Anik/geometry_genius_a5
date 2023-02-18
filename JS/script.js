@@ -164,7 +164,7 @@ function color(colorRandom){
     colorRandom.style.transition = "0.5s";
 }
 function noColor(noColorRandom){
-    noColorRandom.style.backgroundColor = "";
+    // noColorRandom.style.backgroundColor = "";
 }
 
 
